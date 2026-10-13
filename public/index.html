@@ -89,7 +89,8 @@ mark::before{content:"";position:absolute;left:-.08em;right:-.08em;bottom:.08em;
 .sheet{max-width:var(--max);margin:8px auto 0;padding:10px;border-radius:24px;background:rgba(255,255,255,.95);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border:1px solid var(--line);display:grid;gap:2px;box-shadow:0 20px 50px -30px rgba(18,17,9,.4)}
 .sheet a{padding:14px 16px;border-radius:16px;text-decoration:none;font:700 1.1rem var(--display)}
 .sheet a:hover{background:var(--soft)}
-@media (max-width:980px){.links{display:none}.burger{display:grid}.nav-r .btn{display:none}}
+@media (max-width:980px){.links{display:none}}
+@media (max-width:420px){.nav-r .btn{padding:7px 7px 7px 14px;font-size:.82rem}.brand b{font-size:.9rem}}
 
 /* Hero */
 .hero{position:relative;padding-block:calc(env(safe-area-inset-top,0px) + 120px) 40px;overflow:hidden}
@@ -381,12 +382,8 @@ footer a:hover{color:var(--gold)}
     </nav>
     <div class="nav-r">
       <a class="btn y mag" href="#contact">Free estimate <span class="dot">→</span></a>
-      <button class="burger" id="burger" aria-expanded="false" aria-controls="sheet" aria-label="Menu"><span></span><span></span></button>
     </div>
   </div>
-  <nav class="sheet" id="sheet" hidden aria-label="Mobile">
-    <a href="#services">Services</a><a href="#system">Layers</a><a href="#process">Process</a><a href="#why">Why Us</a><a href="#faq">FAQ</a><a href="#contact">Free estimate →</a>
-  </nav>
 </header>
 
 <main id="top">
@@ -707,6 +704,9 @@ footer a:hover{color:var(--gold)}
           <div class="field"><label for="f-name">Name</label><input id="f-name" name="name" autocomplete="name" placeholder="Jordan Rivera" required></div>
           <div class="field"><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" placeholder="(480) 000-0000" required></div>
           <div class="field full"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" placeholder="you@email.com"></div>
+          <div class="field full"><label for="f-svc">Project</label>
+            <select id="f-svc" name="service"><option>Garage floor coating</option><option>Residential epoxy</option><option>Patio / concrete coating</option><option>Decorative flake</option><option>Metallic epoxy</option><option>Commercial epoxy flooring</option><option>Warehouse floor</option><option>Not sure yet</option></select>
+          </div>
           <div class="field full"><label for="f-msg">Anything else?</label><textarea id="f-msg" name="message" rows="3" placeholder="Size of the space, timing, questions"></textarea></div>
           <button class="btn mag" type="submit">Send my request <span class="dot">→</span></button>
           <p class="note" id="fNote" hidden></p>
@@ -742,13 +742,10 @@ footer a:hover{color:var(--gold)}
   function onScroll(){
     var y = scrollY, h = document.documentElement.scrollHeight - innerHeight;
     prog.style.transform = 'scaleX(' + (h > 0 ? y / h : 0) + ')';
-    if(document.getElementById('sheet').hidden) nav.classList.toggle('hide', y > lastY && y > 300);
+    nav.classList.toggle('hide', y > lastY && y > 300);
     lastY = y;
   }
   addEventListener('scroll', onScroll, {passive:true});
-  var burger = document.getElementById('burger'), sheet = document.getElementById('sheet');
-  burger.addEventListener('click', function(){ var o = sheet.hidden; sheet.hidden = !o; burger.setAttribute('aria-expanded', String(o)); });
-  sheet.addEventListener('click', function(e){ if(e.target.tagName === 'A'){ sheet.hidden = true; burger.setAttribute('aria-expanded','false'); } });
 
   /* Ticker duplicate */
   var tk = document.getElementById('ticker'); tk.innerHTML += tk.innerHTML;
@@ -840,6 +837,11 @@ footer a:hover{color:var(--gold)}
     b.addEventListener('mouseleave', function(){ b.style.transform = ''; });
   });
 
+
+  /* Service card -> form prefill */
+  document.querySelectorAll('.card[data-svc]').forEach(function(c){ c.addEventListener('click', function(){
+    var s = document.getElementById('f-svc'); for(var i = 0; i < s.options.length; i++) if(s.options[i].text === c.dataset.svc) s.selectedIndex = i;
+  }); });
 
   /* Reveal (transform only) */
   if('IntersectionObserver' in window && !reduce){
