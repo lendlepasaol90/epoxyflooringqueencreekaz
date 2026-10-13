@@ -707,9 +707,6 @@ footer a:hover{color:var(--gold)}
           <div class="field"><label for="f-name">Name</label><input id="f-name" name="name" autocomplete="name" placeholder="Jordan Rivera" required></div>
           <div class="field"><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" placeholder="(480) 000-0000" required></div>
           <div class="field full"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" placeholder="you@email.com"></div>
-          <div class="field full"><label for="f-svc">Project</label>
-            <select id="f-svc" name="service"><option>Garage floor coating</option><option>Residential epoxy</option><option>Patio / concrete coating</option><option>Decorative flake</option><option>Metallic epoxy</option><option>Commercial epoxy flooring</option><option>Warehouse floor</option><option>Not sure yet</option></select>
-          </div>
           <div class="field full"><label for="f-msg">Anything else?</label><textarea id="f-msg" name="message" rows="3" placeholder="Size of the space, timing, questions"></textarea></div>
           <button class="btn mag" type="submit">Send my request <span class="dot">→</span></button>
           <p class="note" id="fNote" hidden></p>
@@ -843,10 +840,6 @@ footer a:hover{color:var(--gold)}
     b.addEventListener('mouseleave', function(){ b.style.transform = ''; });
   });
 
-  /* Service card -> form prefill */
-  document.querySelectorAll('.card[data-svc]').forEach(function(c){ c.addEventListener('click', function(){
-    var s = document.getElementById('f-svc'); for(var i = 0; i < s.options.length; i++) if(s.options[i].text === c.dataset.svc) s.selectedIndex = i;
-  }); });
 
   /* Reveal (transform only) */
   if('IntersectionObserver' in window && !reduce){
