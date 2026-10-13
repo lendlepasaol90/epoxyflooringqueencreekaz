@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Epoxy Flooring Queen Creek AZ</title>
 <meta name="description" content="Epoxy Flooring Queen Creek AZ installs garage floor coatings, decorative flake, metallic epoxy, polyaspartic, polyurea, patio and commercial epoxy floors in Queen Creek and the East Valley.">
+<link rel="canonical" href="https://epoxyflooringqueencreekaz.com/">
 <meta name="theme-color" content="#FFD21F">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='16' fill='%23FFD21F'/%3E%3Ctext x='16' y='21' font-family='Arial' font-weight='900' font-size='13' text-anchor='middle' fill='%23121109'%3EQC%3C/text%3E%3C/svg%3E">
 
@@ -374,6 +375,30 @@ footer a:hover{color:var(--gold)}
   .rv.pending{transform:none}
   html{scroll-behavior:auto}
 }
+
+/* Services dropdown */
+.dd{position:relative}
+.dd-btn{display:inline-flex;align-items:center;gap:6px;border:0;background:none;font:600 .9rem var(--body);color:var(--ink);padding:9px 14px;border-radius:99px;cursor:pointer;transition:background .25s}
+.dd-btn:hover,.dd.open .dd-btn{background:var(--soft)}
+.dd-btn svg{width:14px;height:14px;transition:transform .4s var(--ease)}
+.dd.open .dd-btn svg{transform:rotate(180deg)}
+.dd-panel{position:absolute;top:calc(100% + 16px);left:50%;width:min(620px,92vw);transform:translate(-50%,12px) scale(.98);transform-origin:top center;opacity:0;visibility:hidden;pointer-events:none;background:rgba(255,255,255,.97);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid var(--line);border-radius:26px;padding:10px;box-shadow:0 40px 80px -40px rgba(18,17,9,.45);transition:opacity .3s var(--ease),transform .45s var(--ease),visibility 0s .45s;z-index:70}
+.dd-panel::before{content:"";position:absolute;left:0;right:0;top:-18px;height:18px}
+.dd.open .dd-panel{opacity:1;visibility:visible;pointer-events:auto;transform:translate(-50%,0) scale(1);transition:opacity .3s var(--ease),transform .45s var(--ease),visibility 0s}
+.dd-grid{display:grid;grid-template-columns:1fr 1fr;gap:2px}
+.dd-grid a{display:flex;align-items:center;gap:12px;padding:11px 12px;border-radius:16px;text-decoration:none;transition:background .25s,transform .35s var(--ease)}
+.dd-grid a:hover,.dd-grid a:focus-visible{background:var(--soft);transform:translateX(3px)}
+.dd-grid a[aria-current="page"]{background:var(--yellow-2)}
+.dd-grid .di{width:38px;height:38px;flex:none;border-radius:12px;background:var(--soft);display:grid;place-items:center;transition:background .25s,transform .45s var(--ease)}
+.dd-grid a:hover .di{background:var(--yellow);transform:rotate(-8deg)}
+.dd-grid .di svg{width:19px;height:19px}
+.dd-grid b{display:block;font:700 .92rem var(--body);line-height:1.25}
+.dd-grid small{display:block;color:var(--muted);font-size:.78rem;line-height:1.3}
+.dd.open .dd-grid a{animation:ddin .5s var(--ease) both;animation-delay:calc(var(--k)*30ms)}
+@keyframes ddin{from{transform:translateY(8px);opacity:0}to{transform:none;opacity:1}}
+.dd-foot{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:6px;padding:12px 14px;border-radius:16px;background:var(--ink);color:#fff;text-decoration:none;font:600 .88rem var(--body)}
+.dd-foot span{color:var(--yellow)}
+@media (prefers-reduced-motion:reduce){.dd.open .dd-grid a{animation:none}}
 </style>
 </head>
 <body>
@@ -388,7 +413,8 @@ footer a:hover{color:var(--gold)}
       <span><b>Epoxy Flooring</b><small>Queen Creek · AZ</small></span>
     </a>
     <nav class="links" aria-label="Main">
-      <a href="#services">Services</a>
+      <div class="dd"><button class="dd-btn" aria-expanded="false" aria-haspopup="true">Services <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="m6 9 6 6 6-6"/></svg></button>
+        <div class="dd-panel"><div class="dd-grid"><a href="garage-floor-coatings-queen-creek-az/" style="--k:0"><span class="di"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 11 12 4l9 7v9H3z"/><path d="M7 20v-7h10v7M7 16h10"/></svg></span><span><b>Garage Floor Coatings</b><small>Flake floors with UV-stable topcoats</small></span></a><a href="residential-epoxy-flooring-queen-creek-az/" style="--k:1"><span class="di"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 21V10l8-6 8 6v11z"/><path d="M10 21v-6h4v6"/></svg></span><span><b>Residential Epoxy</b><small>Workshops, gyms and utility rooms</small></span></a><a href="decorative-flake-flooring-queen-creek-az/" style="--k:2"><span class="di"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="M8 8h.01M15 7h.01M10 14h.01M16 15h.01M7 17h.01"/></svg></span><span><b>Decorative Flake</b><small>Custom chip blends</small></span></a><a href="metallic-epoxy-flooring-queen-creek-az/" style="--k:3"><span class="di"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 15c4-5 6 3 10-2s6 3 10-2M2 20c4-5 6 3 10-2s6 3 10-2M2 10c4-5 6 3 10-2s6 3 10-2"/></svg></span><span><b>Metallic Epoxy</b><small>Flowing, marbled finishes</small></span></a><a href="polyaspartic-floor-coatings-queen-creek-az/" style="--k:4"><span class="di"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg></span><span><b>Polyaspartic Floor</b><small>Fast cure, UV-stable</small></span></a><a href="polyurea-floor-coatings-queen-creek-az/" style="--k:5"><span class="di"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-4.5"/></svg></span><span><b>Polyurea Floor</b><small>Flexible, quick-curing base</small></span></a><a href="patio-concrete-coatings-queen-creek-az/" style="--k:6"><span class="di"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="17" cy="7" r="3"/><path d="M3 21h18M6 21l3-7h8l3 7"/></svg></span><span><b>Patio / Concrete Coatings</b><small>Outdoor, sun-ready finishes</small></span></a><a href="commercial-epoxy-flooring-queen-creek-az/" style="--k:7"><span class="di"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="6" width="18" height="15" rx="2"/><path d="M3 11h18M9 6V3h6v3"/></svg></span><span><b>Commercial Epoxy</b><small>Retail, showrooms, service bays</small></span></a><a href="warehouse-floor-coatings-queen-creek-az/" style="--k:8"><span class="di"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 21V9l9-5 9 5v12"/><path d="M7 21v-8h10v8M7 17h10"/></svg></span><span><b>Warehouse Floor</b><small>Forklift and industrial traffic</small></span></a></div><a class="dd-foot" href="#services">See all services side by side <span>→</span></a></div></div>
       <a href="#system">Layers</a>
       <a href="#process">Process</a>
       <a href="#why">Why Us</a>
@@ -431,7 +457,7 @@ footer a:hover{color:var(--gold)}
           <div class="field"><label for="h-phone">Phone</label><input id="h-phone" name="phone" type="tel" autocomplete="tel" placeholder="(480) 000-0000" required></div>
           <div class="field"><label for="h-email">Email</label><input id="h-email" name="email" type="email" autocomplete="email" placeholder="you@email.com"></div>
           <div class="field full"><label for="h-svc">Project</label>
-            <select id="h-svc" name="service"><option>Garage floor coating</option><option>Residential epoxy</option><option>Patio / concrete coating</option><option>Decorative flake</option><option>Metallic epoxy</option><option>Commercial epoxy flooring</option><option>Warehouse floor</option><option>Not sure yet</option></select>
+            <select id="h-svc" name="service"><option>Garage floor coating</option><option>Residential epoxy</option><option>Decorative flake</option><option>Metallic epoxy</option><option>Polyaspartic coating</option><option>Polyurea coating</option><option>Patio / concrete coating</option><option>Commercial epoxy flooring</option><option>Warehouse floor</option><option>Not sure yet</option></select>
           </div>
           <button class="btn y mag" type="submit">Request my callback <span class="dot">→</span></button>
           <p class="note" hidden></p>
@@ -479,7 +505,7 @@ footer a:hover{color:var(--gold)}
         <p class="lead">Nine systems, each matched to the space. Pick one to request a quote.</p>
       </div>
       <div class="bento">
-        <a class="card big tilt rv" href="#contact" data-svc="Garage floor coating">
+        <a class="card big tilt rv" href="garage-floor-coatings-queen-creek-az/">
           <canvas class="flakes" id="flakeCard" aria-hidden="true"></canvas>
           <div class="top"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#121109" stroke-width="2"><path d="M3 11 12 4l9 7v9H3z"/><path d="M7 20v-7h10v7M7 16h10"/></svg></span><span class="arrow">→</span></div>
           <div class="body">
@@ -488,49 +514,49 @@ footer a:hover{color:var(--gold)}
             <p>Hide oil spots and hot-tire marks under a decorative flake floor that makes the garage feel like part of the house. One, two and three-car garages, RV garages and detached shops.</p>
           </div>
         </a>
-        <a class="card span5 metal tilt rv" href="#contact" data-svc="Metallic epoxy">
+        <a class="card span5 metal tilt rv" href="metallic-epoxy-flooring-queen-creek-az/">
           <div class="top"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#121109" stroke-width="2"><path d="M2 15c4-5 6 3 10-2s6 3 10-2M2 20c4-5 6 3 10-2s6 3 10-2M2 10c4-5 6 3 10-2s6 3 10-2"/></svg></span><span class="arrow">→</span></div>
           <span class="k">High-gloss · one of a kind</span>
           <h3>Metallic Epoxy</h3>
           <p>Swirling, pearlescent finishes with real depth. No two floors come out the same.</p>
         </a>
-        <a class="card span5 tilt rv" href="#contact" data-svc="Decorative flake">
+        <a class="card span5 tilt rv" href="decorative-flake-flooring-queen-creek-az/">
           <div class="top"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#121109" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="M8 8h.01M15 7h.01M10 14h.01M16 15h.01M7 17h.01"/></svg></span><span class="arrow">→</span></div>
           <span class="k">Custom color blends</span>
           <h3>Decorative Flake</h3>
           <p>Multicolor vinyl chips broadcast into the base coat for a stone-like look that hides everyday dust.</p>
         </a>
-        <a class="card tilt rv" href="#contact" data-svc="Residential epoxy">
+        <a class="card tilt rv" href="residential-epoxy-flooring-queen-creek-az/">
           <div class="top"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#121109" stroke-width="2"><path d="M4 21V10l8-6 8 6v11z"/><path d="M10 21v-6h4v6"/></svg></span><span class="arrow">→</span></div>
           <span class="k">Gyms · workshops · casitas</span>
           <h3>Residential Epoxy</h3>
           <p>Finished concrete for home gyms, hobby rooms and workshops.</p>
         </a>
-        <a class="card tilt rv" href="#contact" data-svc="Patio / concrete coating">
+        <a class="card tilt rv" href="patio-concrete-coatings-queen-creek-az/">
           <div class="top"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#121109" stroke-width="2"><circle cx="17" cy="7" r="3"/><path d="M3 21h18M6 21l3-7h8l3 7"/></svg></span><span class="arrow">→</span></div>
           <span class="k">UV-stable · outdoor</span>
           <h3>Patio / Concrete Coatings</h3>
           <p>Picked for full sun, monsoon rain and big temperature swings.</p>
         </a>
-        <a class="card dark tilt rv" href="#contact" data-svc="Commercial epoxy flooring">
+        <a class="card dark tilt rv" href="commercial-epoxy-flooring-queen-creek-az/">
           <div class="top"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><rect x="3" y="6" width="18" height="15" rx="2"/><path d="M3 11h18M9 6V3h6v3"/></svg></span><span class="arrow">→</span></div>
           <span class="k">Retail · auto · showrooms</span>
           <h3>Commercial Epoxy Flooring</h3>
           <p>Floors that handle customers, carts and daily cleaning.</p>
         </a>
-        <a class="card tilt rv" href="#contact" data-svc="Garage floor coating">
+        <a class="card tilt rv" href="polyaspartic-floor-coatings-queen-creek-az/">
           <div class="top"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#121109" stroke-width="2"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg></span><span class="arrow">→</span></div>
           <span class="k">Fast cure · UV-stable</span>
           <h3>Polyaspartic Floor</h3>
           <p>Resists yellowing in the sun and gets many garages back in use quickly.</p>
         </a>
-        <a class="card tilt rv" href="#contact" data-svc="Garage floor coating">
+        <a class="card tilt rv" href="polyurea-floor-coatings-queen-creek-az/">
           <div class="top"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#121109" stroke-width="2"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-4.5"/></svg></span><span class="arrow">→</span></div>
           <span class="k">Flexible · impact-resistant</span>
           <h3>Polyurea Floor</h3>
           <p>A tough, flexible base coat that bonds well and takes impact.</p>
         </a>
-        <a class="card tilt rv" href="#contact" data-svc="Warehouse floor">
+        <a class="card tilt rv" href="warehouse-floor-coatings-queen-creek-az/">
           <div class="top"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#121109" stroke-width="2"><path d="M3 21V9l9-5 9 5v12"/><path d="M7 21v-8h10v8M7 17h10"/></svg></span><span class="arrow">→</span></div>
           <span class="k">Forklifts · racks · machinery</span>
           <h3>Warehouse Floor</h3>
@@ -733,7 +759,7 @@ footer a:hover{color:var(--gold)}
           <div class="field"><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" placeholder="(480) 000-0000" required></div>
           <div class="field full"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" placeholder="you@email.com"></div>
           <div class="field full"><label for="f-svc">Project</label>
-            <select id="f-svc" name="service"><option>Garage floor coating</option><option>Residential epoxy</option><option>Patio / concrete coating</option><option>Decorative flake</option><option>Metallic epoxy</option><option>Commercial epoxy flooring</option><option>Warehouse floor</option><option>Not sure yet</option></select>
+            <select id="f-svc" name="service"><option>Garage floor coating</option><option>Residential epoxy</option><option>Decorative flake</option><option>Metallic epoxy</option><option>Polyaspartic coating</option><option>Polyurea coating</option><option>Patio / concrete coating</option><option>Commercial epoxy flooring</option><option>Warehouse floor</option><option>Not sure yet</option></select>
           </div>
           <div class="field full"><label for="f-msg">Anything else?</label><textarea id="f-msg" name="message" rows="3" placeholder="Size of the space, timing, questions"></textarea></div>
           <button class="btn mag" type="submit">Send my request <span class="dot">→</span></button>
@@ -751,7 +777,7 @@ footer a:hover{color:var(--gold)}
         <a class="brand" href="#top"><span class="logo-slot">QC</span><span><b>Epoxy Flooring</b><small>Queen Creek · AZ</small></span></a>
         <p style="margin-top:16px;color:var(--muted);max-width:38ch">Residential and commercial epoxy flooring for Queen Creek and the East Valley.</p>
       </div>
-      <div><h4>Services</h4><ul><li><a href="#services">Garage Floor Coatings</a></li><li><a href="#services">Decorative Flake</a></li><li><a href="#services">Metallic Epoxy</a></li><li><a href="#services">Polyaspartic &amp; Polyurea</a></li><li><a href="#services">Commercial &amp; Warehouse</a></li></ul></div>
+      <div><h4>Services</h4><ul><li><a href="garage-floor-coatings-queen-creek-az/">Garage Floor Coatings</a></li><li><a href="residential-epoxy-flooring-queen-creek-az/">Residential Epoxy</a></li><li><a href="decorative-flake-flooring-queen-creek-az/">Decorative Flake</a></li><li><a href="metallic-epoxy-flooring-queen-creek-az/">Metallic Epoxy</a></li><li><a href="polyaspartic-floor-coatings-queen-creek-az/">Polyaspartic Floor</a></li><li><a href="polyurea-floor-coatings-queen-creek-az/">Polyurea Floor</a></li><li><a href="patio-concrete-coatings-queen-creek-az/">Patio / Concrete Coatings</a></li><li><a href="commercial-epoxy-flooring-queen-creek-az/">Commercial Epoxy</a></li><li><a href="warehouse-floor-coatings-queen-creek-az/">Warehouse Floor</a></li></ul></div>
       <div><h4>Contact</h4><ul><li>(480) 555-0123</li><li style="overflow-wrap:anywhere">info@epoxyflooringqueencreek.com</li><li>Queen Creek, AZ 85142</li><li>Mon–Sat · 7am–6pm</li></ul></div>
     </div>
     <div class="wordmark" aria-hidden="true">Queen Creek</div>
@@ -872,10 +898,6 @@ footer a:hover{color:var(--gold)}
   });
 
 
-  /* Service card -> form prefill */
-  document.querySelectorAll('.card[data-svc]').forEach(function(c){ c.addEventListener('click', function(){
-    var s = document.getElementById('f-svc'); for(var i = 0; i < s.options.length; i++) if(s.options[i].text === c.dataset.svc) s.selectedIndex = i;
-  }); });
 
   /* Reveal (transform only) */
   if('IntersectionObserver' in window && !reduce){
@@ -935,6 +957,21 @@ footer a:hover{color:var(--gold)}
       if(bad){ note.textContent = 'Please add your ' + bad.name + ' so we can reach you.'; bad.focus(); return; }
       note.textContent = 'Thanks, ' + form.querySelector('[name=name]').value.trim() + '. This form isn’t connected yet, so please call or email us for now.';
     });
+  });
+
+
+  /* Services dropdown */
+  document.querySelectorAll('.dd').forEach(function(dd){
+    var btn = dd.querySelector('.dd-btn'), closeT;
+    function set(o){ dd.classList.toggle('open', o); btn.setAttribute('aria-expanded', String(o)); }
+    btn.addEventListener('click', function(e){ e.stopPropagation(); set(!dd.classList.contains('open')); });
+    if(window.matchMedia && matchMedia('(hover:hover)').matches){
+      dd.addEventListener('mouseenter', function(){ clearTimeout(closeT); set(true); });
+      dd.addEventListener('mouseleave', function(){ closeT = setTimeout(function(){ set(false); }, 180); });
+    }
+    document.addEventListener('click', function(e){ if(!dd.contains(e.target)) set(false); });
+    document.addEventListener('keydown', function(e){ if(e.key === 'Escape'){ set(false); btn.focus(); } });
+    dd.addEventListener('focusout', function(e){ if(!dd.contains(e.relatedTarget)) set(false); });
   });
 
   /* Copy */
