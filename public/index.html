@@ -415,6 +415,42 @@ footer a:hover{color:var(--gold)}
 .foot .brand .logo{height:clamp(96px,11vw,140px)}
 @media (max-width:420px){.brand .logo{height:44px}}
 
+/* Comparison + conditions + pricing + area */
+.cmp-wrap{overflow-x:auto;border-radius:var(--r);border:1px solid var(--line);background:var(--bg)}
+.cmp{width:100%;min-width:720px;border-collapse:collapse;font-size:.95rem}
+.cmp th,.cmp td{text-align:left;padding:16px 18px;border-bottom:1px solid var(--line);vertical-align:top}
+.cmp thead th{font:700 1.05rem var(--display);background:var(--soft)}
+.cmp thead th:first-child{font:500 .72rem var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.cmp tbody th{font:500 .74rem var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted);width:150px}
+.cmp tbody tr{transition:background .25s}
+.cmp tbody tr:hover{background:#FFFBE6}
+.cmp tbody tr:last-child td,.cmp tbody tr:last-child th{border-bottom:0}
+.cmp .pill{display:inline-block;padding:3px 10px;border-radius:99px;font-size:.78rem;font-weight:700;background:var(--soft)}
+.cmp .pill.y{background:var(--yellow)}
+.cmp-note{margin-top:22px;color:var(--muted);max-width:70ch}
+.conds{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:14px}
+.cond{grid-column:span 2;border-radius:var(--r);padding:26px;background:var(--soft);display:grid;gap:10px;align-content:start;transition:transform .5s var(--ease),background .4s}
+.cond:nth-child(4),.cond:nth-child(5){grid-column:span 3}
+.cond:hover{transform:translateY(-6px);background:var(--yellow-2)}
+.cond .ic{width:48px;height:48px;border-radius:15px;background:var(--bg);display:grid;place-items:center;transition:transform .6s var(--ease)}
+.cond:hover .ic{transform:rotate(-10deg) scale(1.05)}
+.cond .ic svg{width:24px;height:24px}
+.cond p{color:var(--muted);font-size:.95rem}
+.cond:hover p{color:#3d3826}
+.price{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(28px,5vw,72px);align-items:start}
+.factors{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.factor{border:1px solid var(--line);border-radius:22px;padding:20px;display:grid;gap:6px;transition:border-color .3s,box-shadow .4s var(--ease)}
+.factor:hover{border-color:var(--yellow);box-shadow:0 0 0 4px rgba(255,210,31,.22)}
+.factor b{font:700 1rem var(--display)}
+.factor p{color:var(--muted);font-size:.9rem}
+.area{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(28px,5vw,72px);align-items:center}
+.towns{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.town{display:flex;align-items:center;gap:10px;padding:14px 16px;border-radius:18px;background:var(--soft);font-weight:600;transition:background .25s,transform .4s var(--ease)}
+.town:hover{background:var(--yellow);transform:translateX(4px)}
+.town::before{content:"";width:10px;height:10px;border-radius:50%;background:var(--ink);flex:none}
+@media (max-width:980px){.price,.area{grid-template-columns:1fr}.cond,.cond:nth-child(4),.cond:nth-child(5){grid-column:span 3}}
+@media (max-width:640px){.factors,.towns{grid-template-columns:1fr}.cond,.cond:nth-child(4),.cond:nth-child(5){grid-column:1/-1}}
+
 /* Photos */
 .photo{position:relative;margin:0;border-radius:var(--r);overflow:hidden;background:var(--soft);isolation:isolate}
 .photo img{display:block;width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
@@ -655,6 +691,40 @@ footer a:hover{color:var(--gold)}
     </div>
   </section>
 
+  <section class="block" id="compare" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <span class="tag"><i></i>Compare coatings</span>
+        <h2>Epoxy, polyaspartic or polyurea?</h2>
+        <p class="lead">Most floors we install combine more than one chemistry. Each layer has a job, and the right mix depends on your slab, how much sun reaches the floor and how soon you need the space back.</p>
+      </div>
+      <div class="cmp-wrap rv">
+        <table class="cmp">
+          <thead><tr><th scope="col">At a glance</th><th scope="col">Epoxy</th><th scope="col">Polyaspartic</th><th scope="col">Polyurea</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Typical role</th><td>Primer and pigmented base coat. Also the main material in metallic floors.</td><td>Clear protective topcoat. Some products can be tinted.</td><td>Flexible base coat in many decorative flake systems.</td></tr>
+            <tr><th scope="row">Cure speed</th><td><span class="pill">Slower</span> More time before foot traffic and vehicles.</td><td><span class="pill y">Fast</span> Many floors return to service sooner.</td><td><span class="pill y">Fast</span> Timing varies by formula and temperature.</td></tr>
+            <tr><th scope="row">UV stability</th><td>Many formulas can yellow in direct sun without a UV-stable topcoat.</td><td>Many aliphatic formulas hold their color well in sunlight.</td><td>Some aromatic formulas can discolor, so a UV topcoat is common.</td></tr>
+            <tr><th scope="row">Working time</th><td>Longer, which helps with detail work, repairs and metallic effects.</td><td>Short. Mixing, spreading and recoat timing must be precise.</td><td>Short. Flake broadcast happens within a tight window.</td></tr>
+            <tr><th scope="row">Best fit</th><td>Interior floors, metallic designs and base layers under a topcoat.</td><td>Sunny garages, patios and projects with tight schedules.</td><td>Garages and spaces that see bigger temperature swings.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="cmp-note rv">So which one is best? None of them wins on every count, and the label on the can tells you less than the full system does. A common Queen Creek garage floor pairs a polyurea or epoxy base coat with decorative flakes and a UV-stable polyaspartic topcoat. When you compare quotes, ask what each layer contributes, how thick it goes down and when you can walk, park and move things back in.</p>
+    </div>
+  </section>
+
+  <section class="block" id="arizona" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <span class="tag"><i></i>Local know-how</span>
+        <h2>Built for Queen Creek conditions</h2>
+        <p class="lead">A floor that holds up in a mild climate can struggle here. These are the local conditions we plan around on every project.</p>
+      </div>
+      <div class="conds"><div class="cond rv"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#121109" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.5 1.5M17.5 17.5 19 19M5 19l1.5-1.5M17.5 6.5 19 5"/></svg></span><h3>Summer heat</h3><p>A slab in direct sun can run much hotter than the air around it. Heat shortens working time, so we plan around the temperature of the concrete, often starting early in the day and following each product’s limits.</p></div><div class="cond rv"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#121109" stroke-width="2"><path d="M3 21h18M5 21V10l7-6 7 6v11"/><path d="M9 21v-6h6v6"/></svg></span><h3>Sun at the garage door</h3><p>Afternoon sun pouring through an open garage door is hard on coatings that are not UV stable. A UV-stable topcoat helps the floor near the threshold keep the same color as the rest of the room.</p></div><div class="cond rv"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#121109" stroke-width="2"><path d="M7 16a5 5 0 1 1 .9-9.9A6 6 0 0 1 19 9a4 4 0 0 1-1 7.9"/><path d="M9 19l-1 2M13 19l-1 2M17 19l-1 2"/></svg></span><h3>Monsoon moisture</h3><p>Monsoon storms bring sudden rain and humidity. Moisture affects how coatings apply and cure, and moisture moving up through a slab can cause bond problems, so we test when the slab or its history calls for it.</p></div><div class="cond rv"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#121109" stroke-width="2"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg></span><h3>Desert dust and grit</h3><p>Fine dust and sand blow into garages and shops and act like sandpaper under tires and shoes. A tough topcoat and regular sweeping keep the finish looking good for longer.</p></div><div class="cond rv"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#121109" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M8 4v6M16 4v6"/></svg></span><h3>Slabs of every age</h3><p>Queen Creek has established homes, brand-new neighborhoods and custom properties. New concrete needs time to cure before coating, while older slabs may carry sealers, oil, paint or old coatings that must come off first.</p></div></div>
+    </div>
+  </section>
+
   <section class="block" id="benefits" style="padding-top:0">
     <div class="wrap">
       <div class="sec-head center rv">
@@ -805,7 +875,50 @@ footer a:hover{color:var(--gold)}
         <div class="qa"><button aria-expanded="false">Is epoxy flooring slippery?<span class="pm">+</span></button><div class="ans"><div><p>Any smooth floor can be slippery when wet. We can add texture or aggregate for grip. More texture means better traction, while smoother floors are easier to mop.</p></div></div></div>
         <div class="qa"><button aria-expanded="false">Can I pick my own colors?<span class="pm">+</span></button><div class="ans"><div><p>Yes. Depending on the system, there are many solid colors, flake blends and metallic finishes to choose from.</p></div></div></div>
         <div class="qa"><button aria-expanded="false">Is it easy to clean?<span class="pm">+</span></button><div class="ans"><div><p>Yes. Sweep regularly to remove grit and mop with a suitable cleaner. Wipe spills promptly and avoid dragging sharp or very heavy items.</p></div></div></div>
-        <div class="qa"><button aria-expanded="false">How much does it cost in Queen Creek?<span class="pm">+</span></button><div class="ans"><div><p>Price depends on square footage, slab condition, prep and repairs, the system, decorative options and number of coats. A free on-site estimate gives you an accurate number.</p></div></div></div>
+        <div class="qa"><button aria-expanded="false">How much does it cost in Queen Creek?<span class="pm">+</span></button><div class="ans"><div><p>Price depends on square footage, slab condition, prep and repairs, the system, decorative options and number of coats. A free on-site estimate gives you an accurate number.</p></div></div></div><div class="qa"><button aria-expanded="false">What is the difference between epoxy and polyaspartic?<span class="pm">+</span></button><div class="ans"><div><p>Epoxy usually serves as the primer or base coat and gives you longer working time. Polyaspartic is often used as the clear topcoat because many formulas cure fast and resist yellowing in sunlight. Many floors use both.</p></div></div></div><div class="qa"><button aria-expanded="false">How should I prepare my garage before installation?<span class="pm">+</span></button><div class="ans"><div><p>Clear the floor completely, including shelves or cabinets that sit on the slab if they can be moved. Park vehicles elsewhere and let us know about any oil stains, old coatings or cracks you have noticed.</p></div></div></div><div class="qa"><button aria-expanded="false">Can you coat a brand-new concrete slab?<span class="pm">+</span></button><div class="ans"><div><p>Yes, once it has cured. New concrete holds a lot of water at first, so coating too early can cause bond problems. Ask us about timing before you schedule.</p></div></div></div><div class="qa"><button aria-expanded="false">How soon can I park on my new floor?<span class="pm">+</span></button><div class="ans"><div><p>It depends on the products used and the temperature. We give you separate written times for foot traffic, moving items back in and parking vehicles.</p></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="pricing">
+    <div class="wrap price">
+      <div class="rv">
+        <div class="sec-head" style="margin-bottom:22px">
+          <span class="tag"><i></i>Cost</span>
+          <h2>What affects the price of an epoxy floor?</h2>
+        </div>
+        <div class="prose">
+          <p>Two floors of the same size can be priced very differently. The coating is only part of the cost. Preparation, repairs and the system you choose usually make the biggest difference.</p>
+          <p>The most reliable way to get a number is an on-site look at your slab. We measure the space, check the concrete and walk you through options, so you can compare a clear, written scope rather than a price per square foot with no details behind it.</p>
+        </div>
+        <a class="btn mag" href="#contact" style="margin-top:26px">Get a free estimate <span class="dot">→</span></a>
+      </div>
+      <div class="factors">
+        <div class="factor rv"><b>Square footage</b><p>Larger floors spread setup costs, but take more material and time.</p></div>
+        <div class="factor rv"><b>Slab condition</b><p>Cracks, pits, spalls and weak concrete add repair work before coating.</p></div>
+        <div class="factor rv"><b>Old coatings</b><p>Paint, sealers or failing epoxy usually need to be ground off first.</p></div>
+        <div class="factor rv"><b>System choice</b><p>Single coats, flake systems and metallic floors use different layers.</p></div>
+        <div class="factor rv"><b>Design options</b><p>Flake density, custom blends and metallic effects change material use.</p></div>
+        <div class="factor rv"><b>Access and timing</b><p>Phased commercial work or after-hours schedules take extra planning.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="area" style="padding-top:0">
+    <div class="wrap area">
+      <div class="rv">
+        <div class="sec-head" style="margin-bottom:22px">
+          <span class="tag"><i></i>Service area</span>
+          <h2>Epoxy flooring across Queen Creek and the East Valley</h2>
+        </div>
+        <div class="prose">
+          <p>We are based in Queen Creek and coat floors for homes and businesses throughout the southeast Valley. Most of our work is residential garages, but we also handle patios, workshops, showrooms, offices, service bays and warehouses.</p>
+          <p>Whether you live in a newer Queen Creek neighborhood, an established San Tan Valley home or run a business in Gilbert, Mesa or Chandler, the process is the same: we look at your slab, talk about how you use the space and recommend a system that fits. If you are just outside the areas listed here, reach out anyway and we will let you know if we can help.</p>
+        </div>
+      </div>
+      <div class="towns rv">
+        <span class="town">Queen Creek</span><span class="town">San Tan Valley</span><span class="town">Gilbert</span><span class="town">Mesa</span>
+        <span class="town">Chandler</span><span class="town">Apache Junction</span><span class="town">Florence</span><span class="town">Gold Canyon</span>
       </div>
     </div>
   </section>
