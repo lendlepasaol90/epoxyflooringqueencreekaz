@@ -103,9 +103,10 @@ mark::before{content:"";position:absolute;left:-.08em;right:-.08em;bottom:.08em;
 .w>span{display:inline-block;animation:up 1s var(--ease) both;animation-delay:calc(var(--i)*70ms + 100ms)}
 @keyframes up{from{transform:translateY(110%) rotate(4deg)}to{transform:none}}
 .rot{display:inline-grid;vertical-align:top;overflow:hidden;padding-bottom:.08em;margin-bottom:-.08em}
-.rot span{grid-area:1/1;white-space:nowrap;color:var(--ink);transform:translateY(110%);transition:transform .8s var(--ease)}
-.rot span.on{transform:none}
-.rot span.out{transform:translateY(-110%)}
+.rot span{grid-area:1/1;white-space:nowrap;color:var(--ink);transform:translateY(110%);opacity:0;visibility:hidden;transition:transform .8s var(--ease),opacity .4s,visibility 0s .8s}
+.rot span.on{transform:none;opacity:1;visibility:visible;transition:transform .8s var(--ease),opacity .4s,visibility 0s}
+.rot span.out{transform:translateY(-110%);opacity:0}
+.rot span.reset{transition:none!important}
 .rot-wrap{display:inline-flex;align-items:center;gap:.18em;background:var(--yellow);border-radius:.32em;padding:0 .22em .02em;animation:pop .9s .45s var(--ease) both}
 @keyframes pop{from{transform:scale(.85)}to{transform:none}}
 .hero .lead{margin-top:24px;animation:fade .9s .55s var(--ease) both}
@@ -781,7 +782,7 @@ footer a:hover{color:var(--gold)}
   var rot = document.getElementById('rot'), words = rot.querySelectorAll('span'), wi = 0;
   if(!reduce) setInterval(function(){
     var cur = words[wi]; cur.classList.remove('on'); cur.classList.add('out');
-    setTimeout(function(){ cur.classList.remove('out'); }, 800);
+    setTimeout(function(){ cur.classList.add('reset'); cur.classList.remove('out'); void cur.offsetWidth; cur.classList.remove('reset'); }, 850);
     wi = (wi + 1) % words.length; words[wi].classList.add('on');
   }, 2200);
 
