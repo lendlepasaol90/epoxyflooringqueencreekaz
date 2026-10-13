@@ -6,6 +6,14 @@
 <title>Residential Epoxy Flooring in Queen Creek, AZ | Home Floor Coatings</title>
 <meta name="description" content="Explore residential epoxy flooring in Queen Creek, AZ for garages, workshops and selected concrete floors. Compare finishes and request an estimate.">
 <link rel="canonical" href="https://epoxyflooringqueencreekaz.com/residential-epoxy-flooring-queen-creek-az/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Epoxy Flooring Queen Creek AZ">
+<meta property="og:title" content="Residential Epoxy Flooring in Queen Creek, AZ | Home Floor Coatings">
+<meta property="og:description" content="Explore residential epoxy flooring in Queen Creek, AZ for garages, workshops and selected concrete floors. Compare finishes and request an estimate.">
+<meta property="og:url" content="https://epoxyflooringqueencreekaz.com/residential-epoxy-flooring-queen-creek-az/">
+<meta property="og:image" content="https://epoxyflooringqueencreekaz.com/assets/img/gray-epoxy-floor-loft-interior-1200.webp">
+<meta property="og:image:alt" content="Bright loft interior with a glossy gray mottled epoxy floor under skylights">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#FFD21F">
 <link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
@@ -447,6 +455,37 @@ footer a:hover{color:var(--gold)}
 .brand .logo{display:block;height:54px;width:auto;max-width:100%}
 .foot .brand .logo{height:clamp(96px,11vw,140px)}
 @media (max-width:420px){.brand .logo{height:44px}}
+
+/* Photos */
+.photo{position:relative;margin:0;border-radius:var(--r);overflow:hidden;background:var(--soft);isolation:isolate}
+.photo img{display:block;width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+.photo figcaption{position:absolute;left:14px;right:14px;bottom:14px;z-index:2;font-size:.84rem;line-height:1.4;color:#fff;background:rgba(18,17,9,.55);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);padding:10px 14px;border-radius:14px;max-width:max-content}
+.par{overflow:hidden}
+.par img{transform:translate3d(0,var(--py,0px),0) scale(1.14);will-change:transform;transition:none}
+.ph-img{aspect-ratio:16/11;max-width:100%}
+.card.big .photo-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+.card.big:hover .photo-bg{transform:scale(1.06)}
+.banner{aspect-ratio:21/8;min-height:240px;border-radius:clamp(26px,4vw,40px);box-shadow:0 40px 80px -50px rgba(18,17,9,.5)}
+.banner .chip{position:absolute;left:20px;bottom:20px;z-index:2;animation:float 6s ease-in-out infinite}
+.inline-fig{aspect-ratio:16/9}
+.inline-fig:hover img{transform:scale(1.04)}
+/* Gallery */
+.gal{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));grid-auto-rows:clamp(180px,22vw,300px);gap:14px}
+.gal a{position:relative;display:block;border-radius:var(--r);overflow:hidden;text-decoration:none;color:#fff;isolation:isolate}
+.gal a img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease),filter .6s}
+.gal a::after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 45%,rgba(18,17,9,.75));opacity:.85;transition:opacity .5s;z-index:0}
+.gal a:hover img{transform:scale(1.07)}
+.gal a:hover::after{opacity:1}
+.gal .cap{position:absolute;left:18px;right:18px;bottom:16px;z-index:2;display:grid;gap:2px;transform:translateY(8px);transition:transform .6s var(--ease)}
+.gal a:hover .cap{transform:none}
+.gal .cap b{font:700 1.05rem var(--display);letter-spacing:-.01em}
+.gal .cap small{font-size:.82rem;color:#e7e2d2;max-height:0;overflow:hidden;opacity:0;transition:max-height .6s var(--ease),opacity .4s}
+.gal a:hover .cap small,.gal a:focus-visible .cap small{max-height:60px;opacity:1}
+.gal .go{position:absolute;right:16px;top:16px;z-index:2;width:38px;height:38px;border-radius:50%;background:rgba(255,255,255,.85);color:var(--ink);display:grid;place-items:center;transform:scale(.6);opacity:0;transition:transform .5s var(--ease),opacity .3s}
+.gal a:hover .go{transform:none;opacity:1}
+.g7{grid-column:span 7}.g5{grid-column:span 5}.g4{grid-column:span 4}.g6{grid-column:span 6}
+@media (max-width:980px){.g7,.g5,.g4,.g6{grid-column:span 6}.banner{aspect-ratio:16/9}}
+@media (max-width:640px){.gal{grid-template-columns:1fr;grid-auto-rows:240px}.g7,.g5,.g4,.g6{grid-column:auto}.banner .chip{display:none}.gal .cap small{max-height:60px;opacity:1}}
 </style>
 </head>
 <body>
@@ -500,17 +539,13 @@ footer a:hover{color:var(--gold)}
   </section>
 
   <div class="wrap">
-    <div class="texture" id="tex" data-kind="flake-warm">
-      <canvas aria-hidden="true"></canvas>
-      <span class="label">Photo: Residential Epoxy project</span>
-      <div class="chip"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 21V10l8-6 8 6v11z"/><path d="M10 21v-6h4v6"/></svg></span><span><b>Residential Epoxy</b><small>Workshops, gyms and utility rooms</small></span></div>
-    </div>
+    <figure class="photo banner par"><img src="/assets/img/gray-epoxy-floor-loft-interior-1200.webp" srcset="/assets/img/gray-epoxy-floor-loft-interior-640.webp 640w, /assets/img/gray-epoxy-floor-loft-interior-1200.webp 1200w, /assets/img/gray-epoxy-floor-loft-interior-1800.webp 1800w" sizes="(max-width:1240px) 100vw, 1200px" width="1200" height="800" alt="Bright loft interior with a glossy gray mottled epoxy floor under skylights" loading="lazy" decoding="async"><div class="chip"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 21V10l8-6 8 6v11z"/><path d="M10 21v-6h4v6"/></svg></span><span><b>Residential Epoxy</b><small>Workshops, gyms and utility rooms</small></span></div></figure>
   </div>
 
   <section class="block">
     <div class="wrap art">
       <aside class="toc" aria-label="On this page"><span class="t">On this page</span><a href="#s-1"><i>01</i>Where residential epoxy makes sense</a><a href="#s-2"><i>02</i>Benefits and practical limits</a><a href="#s-3"><i>03</i>Residential areas and design</a><a href="#s-4"><i>04</i>Comparing epoxy, polyurea and polyaspartic</a><a href="#s-5"><i>05</i>Preparation and installation</a><a href="#s-6"><i>06</i>Care and longevity</a><a href="#s-7"><i>07</i>Queen Creek considerations and contractor choice</a><a href="#faq-list"><i>?</i>FAQ</a><a class="btn mag" href="#quote">Get an estimate <span class="dot">→</span></a></aside>
-      <div class="secs"><section class="sec rv" id="s-1"><span class="sn">01</span><h2>Where residential epoxy makes sense</h2><p>Epoxy is a two-component resin system that cures into a hard film when mixed and installed correctly. It can be tinted, combined with decorative flakes or designed with metallic pigments. It is common on garage floors and other concrete surfaces where owners want a more unified appearance and easier cleaning. Not every floor is a good candidate: persistent moisture, failing coatings, heavy contamination or significant movement may require additional evaluation or a different solution.</p></section><section class="sec rv" id="s-2"><span class="sn">02</span><h2>Benefits and practical limits</h2><p>A suitable epoxy system can reduce concrete dusting, resist many everyday stains and create a surface that is easier to sweep and mop than rough bare concrete. Color and decorative choices are broad. Epoxy is hard and can be less flexible than some other chemistries; it may scratch or chip under impact.</p><p>Many formulations can yellow under ultraviolet exposure, so a sunlit floor may need a UV-stable topcoat or a different system. A coating also follows the shape of the slab unless separate leveling work is specified.</p></section><div class="pull rv"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#121109" stroke-width="2" aria-hidden="true"><path d="M4 21V10l8-6 8 6v11z"/><path d="M10 21v-6h4v6"/></svg></span><p>Compare the <b>whole system</b>, not just the price. Ask what each layer does, how moisture and joints are handled, and for a <b>written cure schedule</b>.</p></div><section class="sec rv" id="s-3"><span class="sn">03</span><h2>Residential areas and design</h2><p>Garages are a common starting point because they see vehicles, storage and frequent cleaning. Workshops may benefit from a coating suited to tools and hobby equipment. Utility rooms and storage areas with suitable concrete can also be candidates. Decorative flakes create a patterned look, while metallic epoxy produces flowing effects resembling stone or abstract marbling. Solid colors are more uniform. Exterior slabs and sunlit spaces need special attention to UV stability, moisture and traction.</p></section><section class="sec rv" id="s-4"><span class="sn">04</span><h2>Comparing epoxy, polyurea and polyaspartic</h2><p>Epoxy offers useful adhesion and film build on prepared concrete. Polyurea systems can cure quickly and may offer flexibility, while polyaspartic coatings are often selected for UV stability and a shorter return-to-service window. Some installations combine an epoxy basecoat with a compatible polyaspartic topcoat. The correct choice depends on sunlight, traffic, chemicals, moisture, application temperature, appearance and budget. Ask what each layer contributes instead of relying on the word “premium.”</p></section><section class="sec rv" id="s-5"><span class="sn">05</span><h2>Preparation and installation</h2><p>The installer should inspect cracks, spalls, old sealers, paint, oil, weak concrete and moisture. Mechanical preparation creates the profile needed for adhesion; cleaning alone may not remove every contaminant or create a consistent profile. Repairs should suit the defect, and active cracks or movement joints need special consideration.</p><p>A typical project includes site assessment, surface preparation, repairs, application of the specified layers and a product-specific cure period. Do not assume the floor is ready for furniture just because it feels dry.</p></section><section class="sec rv" id="s-6"><span class="sn">06</span><h2>Care and longevity</h2><p>Sweep or dust mop regularly and clean with a compatible mild product. Remove grit before wet cleaning, wipe spills promptly and avoid unapproved solvents or abrasive pads. Use protective pads under furniture and avoid dragging heavy appliances. Service life depends on the coating, concrete, installation, traffic, sunlight and care. If a chip develops, have it assessed before moisture or contaminants affect the surrounding film. A patch may remain visible, especially in metallic or patterned finishes.</p></section><section class="sec rv" id="s-7"><span class="sn">07</span><h2>Queen Creek considerations and contractor choice</h2><p>Queen Creek has a mix of established homes, newer neighborhoods and custom properties, so concrete can vary in age and condition. Arizona sunlight is relevant near open garage doors, patio transitions and sunlit rooms. Ask for a written scope explaining preparation, repairs, products, finish, cure schedule and exclusions. Compare the entire system, not just the price. Confirm how the contractor handles moisture, joints and existing coatings, and avoid unsupported promises that a floor will never crack or stain.</p></section></div>
+      <div class="secs"><section class="sec rv" id="s-1"><span class="sn">01</span><h2>Where residential epoxy makes sense</h2><p>Epoxy is a two-component resin system that cures into a hard film when mixed and installed correctly. It can be tinted, combined with decorative flakes or designed with metallic pigments. It is common on garage floors and other concrete surfaces where owners want a more unified appearance and easier cleaning. Not every floor is a good candidate: persistent moisture, failing coatings, heavy contamination or significant movement may require additional evaluation or a different solution.</p></section><section class="sec rv" id="s-2"><span class="sn">02</span><h2>Benefits and practical limits</h2><p>A suitable epoxy system can reduce concrete dusting, resist many everyday stains and create a surface that is easier to sweep and mop than rough bare concrete. Color and decorative choices are broad. Epoxy is hard and can be less flexible than some other chemistries; it may scratch or chip under impact.</p><p>Many formulations can yellow under ultraviolet exposure, so a sunlit floor may need a UV-stable topcoat or a different system. A coating also follows the shape of the slab unless separate leveling work is specified.</p></section><div class="pull rv"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#121109" stroke-width="2" aria-hidden="true"><path d="M4 21V10l8-6 8 6v11z"/><path d="M10 21v-6h4v6"/></svg></span><p>Compare the <b>whole system</b>, not just the price. Ask what each layer does, how moisture and joints are handled, and for a <b>written cure schedule</b>.</p></div><section class="sec rv" id="s-3"><span class="sn">03</span><h2>Residential areas and design</h2><p>Garages are a common starting point because they see vehicles, storage and frequent cleaning. Workshops may benefit from a coating suited to tools and hobby equipment. Utility rooms and storage areas with suitable concrete can also be candidates. Decorative flakes create a patterned look, while metallic epoxy produces flowing effects resembling stone or abstract marbling. Solid colors are more uniform. Exterior slabs and sunlit spaces need special attention to UV stability, moisture and traction.</p></section><section class="sec rv" id="s-4"><span class="sn">04</span><h2>Comparing epoxy, polyurea and polyaspartic</h2><p>Epoxy offers useful adhesion and film build on prepared concrete. Polyurea systems can cure quickly and may offer flexibility, while polyaspartic coatings are often selected for UV stability and a shorter return-to-service window. Some installations combine an epoxy basecoat with a compatible polyaspartic topcoat. The correct choice depends on sunlight, traffic, chemicals, moisture, application temperature, appearance and budget. Ask what each layer contributes instead of relying on the word “premium.”</p></section><figure class="photo inline-fig rv"><img src="/assets/img/self-leveling-epoxy-coating-applied-with-squeegee-1200.webp" srcset="/assets/img/self-leveling-epoxy-coating-applied-with-squeegee-640.webp 640w, /assets/img/self-leveling-epoxy-coating-applied-with-squeegee-1200.webp 1200w, /assets/img/self-leveling-epoxy-coating-applied-with-squeegee-1800.webp 1800w" sizes="(max-width:980px) 100vw, 800px" width="1200" height="801" alt="Installer spreading a self-leveling epoxy coat with a notched squeegee over prepared concrete" loading="lazy" decoding="async"><figcaption>Each layer goes down within its working time.</figcaption></figure><section class="sec rv" id="s-5"><span class="sn">05</span><h2>Preparation and installation</h2><p>The installer should inspect cracks, spalls, old sealers, paint, oil, weak concrete and moisture. Mechanical preparation creates the profile needed for adhesion; cleaning alone may not remove every contaminant or create a consistent profile. Repairs should suit the defect, and active cracks or movement joints need special consideration.</p><p>A typical project includes site assessment, surface preparation, repairs, application of the specified layers and a product-specific cure period. Do not assume the floor is ready for furniture just because it feels dry.</p></section><section class="sec rv" id="s-6"><span class="sn">06</span><h2>Care and longevity</h2><p>Sweep or dust mop regularly and clean with a compatible mild product. Remove grit before wet cleaning, wipe spills promptly and avoid unapproved solvents or abrasive pads. Use protective pads under furniture and avoid dragging heavy appliances. Service life depends on the coating, concrete, installation, traffic, sunlight and care. If a chip develops, have it assessed before moisture or contaminants affect the surrounding film. A patch may remain visible, especially in metallic or patterned finishes.</p></section><section class="sec rv" id="s-7"><span class="sn">07</span><h2>Queen Creek considerations and contractor choice</h2><p>Queen Creek has a mix of established homes, newer neighborhoods and custom properties, so concrete can vary in age and condition. Arizona sunlight is relevant near open garage doors, patio transitions and sunlit rooms. Ask for a written scope explaining preparation, repairs, products, finish, cure schedule and exclusions. Compare the entire system, not just the price. Confirm how the contractor handles moisture, joints and existing coatings, and avoid unsupported promises that a floor will never crack or stain.</p></section></div>
     </div>
   </section>
 
@@ -599,7 +634,7 @@ footer a:hover{color:var(--gold)}
     dd.addEventListener('focusout', function(e){ if(!dd.contains(e.relatedTarget)) set(false); });
   });
 
-  /* Texture */
+  if(document.getElementById('tex')){ /* Texture */
   var tx = document.getElementById('tex'), kind = tx.dataset.kind, cv = tx.querySelector('canvas'), c = cv.getContext('2d');
   var PAL = {
     'flake-gray':{base:'#5a5853',f:['#1a1a18','#8f8d86','#e9e6dd','#FFD21F','#c9c5ba','#6f6c66']},
@@ -656,6 +691,7 @@ footer a:hover{color:var(--gold)}
     }
   } else { paint(); var rt; addEventListener('resize', function(){ clearTimeout(rt); rt = setTimeout(paint, 200); }); }
 
+  }
   /* Magnetic buttons */
   if(fine && !reduce) document.querySelectorAll('.mag').forEach(function(b){
     b.addEventListener('mousemove', function(e){ var r = b.getBoundingClientRect(); b.style.transform = 'translate(' + ((e.clientX - r.left - r.width/2)*.18) + 'px,' + ((e.clientY - r.top - r.height/2)*.3) + 'px)'; });
@@ -679,6 +715,15 @@ footer a:hover{color:var(--gold)}
     var tio = new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ tocLinks.forEach(function(a){ a.classList.toggle('on', a.getAttribute('href') === '#' + e.target.id); }); } }); }, {rootMargin:'-30% 0px -60% 0px'});
     document.querySelectorAll('.sec').forEach(function(s){ tio.observe(s); });
   }
+
+  /* Photo parallax */
+  var pars = document.querySelectorAll('.par');
+  if(pars.length && !(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches)){
+    var ticking = false;
+    function px(){ ticking = false; var vh = innerHeight; pars.forEach(function(el){ var r = el.getBoundingClientRect(); if(r.bottom < 0 || r.top > vh) return; var p = (r.top + r.height/2 - vh/2) / vh; el.style.setProperty('--py', (p * -40).toFixed(1) + 'px'); }); }
+    addEventListener('scroll', function(){ if(!ticking){ ticking = true; requestAnimationFrame(px); } }, {passive:true}); px();
+  }
+
   /* FAQ */
   document.querySelectorAll('.qa').forEach(function(q){ q.querySelector('button').addEventListener('click', function(){
     var open = !q.classList.contains('open');

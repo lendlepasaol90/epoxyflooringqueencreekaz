@@ -6,6 +6,14 @@
 <title>Polyurea Floor Coatings in Queen Creek, AZ | Concrete Protection</title>
 <meta name="description" content="Learn about polyurea floor coatings in Queen Creek, AZ, including cure speed, flexibility, preparation and when a UV-stable topcoat may be needed.">
 <link rel="canonical" href="https://epoxyflooringqueencreekaz.com/polyurea-floor-coatings-queen-creek-az/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Epoxy Flooring Queen Creek AZ">
+<meta property="og:title" content="Polyurea Floor Coatings in Queen Creek, AZ | Concrete Protection">
+<meta property="og:description" content="Learn about polyurea floor coatings in Queen Creek, AZ, including cure speed, flexibility, preparation and when a UV-stable topcoat may be needed.">
+<meta property="og:url" content="https://epoxyflooringqueencreekaz.com/polyurea-floor-coatings-queen-creek-az/">
+<meta property="og:image" content="https://epoxyflooringqueencreekaz.com/assets/img/polyurea-floor-coating-trowel-application-1200.webp">
+<meta property="og:image:alt" content="Installer smoothing a gray floor coating with a steel trowel in sweeping arcs">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#FFD21F">
 <link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
@@ -447,6 +455,37 @@ footer a:hover{color:var(--gold)}
 .brand .logo{display:block;height:54px;width:auto;max-width:100%}
 .foot .brand .logo{height:clamp(96px,11vw,140px)}
 @media (max-width:420px){.brand .logo{height:44px}}
+
+/* Photos */
+.photo{position:relative;margin:0;border-radius:var(--r);overflow:hidden;background:var(--soft);isolation:isolate}
+.photo img{display:block;width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+.photo figcaption{position:absolute;left:14px;right:14px;bottom:14px;z-index:2;font-size:.84rem;line-height:1.4;color:#fff;background:rgba(18,17,9,.55);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);padding:10px 14px;border-radius:14px;max-width:max-content}
+.par{overflow:hidden}
+.par img{transform:translate3d(0,var(--py,0px),0) scale(1.14);will-change:transform;transition:none}
+.ph-img{aspect-ratio:16/11;max-width:100%}
+.card.big .photo-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+.card.big:hover .photo-bg{transform:scale(1.06)}
+.banner{aspect-ratio:21/8;min-height:240px;border-radius:clamp(26px,4vw,40px);box-shadow:0 40px 80px -50px rgba(18,17,9,.5)}
+.banner .chip{position:absolute;left:20px;bottom:20px;z-index:2;animation:float 6s ease-in-out infinite}
+.inline-fig{aspect-ratio:16/9}
+.inline-fig:hover img{transform:scale(1.04)}
+/* Gallery */
+.gal{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));grid-auto-rows:clamp(180px,22vw,300px);gap:14px}
+.gal a{position:relative;display:block;border-radius:var(--r);overflow:hidden;text-decoration:none;color:#fff;isolation:isolate}
+.gal a img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease),filter .6s}
+.gal a::after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 45%,rgba(18,17,9,.75));opacity:.85;transition:opacity .5s;z-index:0}
+.gal a:hover img{transform:scale(1.07)}
+.gal a:hover::after{opacity:1}
+.gal .cap{position:absolute;left:18px;right:18px;bottom:16px;z-index:2;display:grid;gap:2px;transform:translateY(8px);transition:transform .6s var(--ease)}
+.gal a:hover .cap{transform:none}
+.gal .cap b{font:700 1.05rem var(--display);letter-spacing:-.01em}
+.gal .cap small{font-size:.82rem;color:#e7e2d2;max-height:0;overflow:hidden;opacity:0;transition:max-height .6s var(--ease),opacity .4s}
+.gal a:hover .cap small,.gal a:focus-visible .cap small{max-height:60px;opacity:1}
+.gal .go{position:absolute;right:16px;top:16px;z-index:2;width:38px;height:38px;border-radius:50%;background:rgba(255,255,255,.85);color:var(--ink);display:grid;place-items:center;transform:scale(.6);opacity:0;transition:transform .5s var(--ease),opacity .3s}
+.gal a:hover .go{transform:none;opacity:1}
+.g7{grid-column:span 7}.g5{grid-column:span 5}.g4{grid-column:span 4}.g6{grid-column:span 6}
+@media (max-width:980px){.g7,.g5,.g4,.g6{grid-column:span 6}.banner{aspect-ratio:16/9}}
+@media (max-width:640px){.gal{grid-template-columns:1fr;grid-auto-rows:240px}.g7,.g5,.g4,.g6{grid-column:auto}.banner .chip{display:none}.gal .cap small{max-height:60px;opacity:1}}
 </style>
 </head>
 <body>
@@ -500,17 +539,13 @@ footer a:hover{color:var(--gold)}
   </section>
 
   <div class="wrap">
-    <div class="texture" id="tex" data-kind="flake-dark">
-      <canvas aria-hidden="true"></canvas>
-      <span class="label">Photo: Polyurea Floor project</span>
-      <div class="chip"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-4.5"/></svg></span><span><b>Polyurea Floor</b><small>Flexible, quick-curing base</small></span></div>
-    </div>
+    <figure class="photo banner par"><img src="/assets/img/polyurea-floor-coating-trowel-application-1200.webp" srcset="/assets/img/polyurea-floor-coating-trowel-application-640.webp 640w, /assets/img/polyurea-floor-coating-trowel-application-1200.webp 1200w, /assets/img/polyurea-floor-coating-trowel-application-1800.webp 1800w" sizes="(max-width:1240px) 100vw, 1200px" width="1200" height="800" alt="Installer smoothing a gray floor coating with a steel trowel in sweeping arcs" loading="lazy" decoding="async"><div class="chip"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-4.5"/></svg></span><span><b>Polyurea Floor</b><small>Flexible, quick-curing base</small></span></div></figure>
   </div>
 
   <section class="block">
     <div class="wrap art">
       <aside class="toc" aria-label="On this page"><span class="t">On this page</span><a href="#s-1"><i>01</i>Understanding polyurea</a><a href="#s-2"><i>02</i>Why owners consider it</a><a href="#s-3"><i>03</i>System design and UV exposure</a><a href="#s-4"><i>04</i>Preparation and moisture</a><a href="#s-5"><i>05</i>Installation and cure</a><a href="#s-6"><i>06</i>Maintenance and choosing a contractor</a><a href="#s-7"><i>07</i>Queen Creek conditions</a><a href="#faq-list"><i>?</i>FAQ</a><a class="btn mag" href="#quote">Get an estimate <span class="dot">→</span></a></aside>
-      <div class="secs"><section class="sec rv" id="s-1"><span class="sn">01</span><h2>Understanding polyurea</h2><p>Polyurea is a family of coatings formed through a reaction between isocyanate and amine components. Formulations vary in reactivity, flexibility, application method and intended use. Some cure quickly and accommodate temperature changes better than more rigid materials, but performance depends on the exact system. Polyurea is commonly used as a basecoat in decorative flake floors, with a compatible topcoat sealing the finish.</p></section><section class="sec rv" id="s-2"><span class="sn">02</span><h2>Why owners consider it</h2><p>Fast cure can reduce the time a garage or other area is unavailable. Flexible formulations can accommodate some thermal change, but they do not eliminate structural movement or poor joint design. Rapid reaction also demands precise application: mixing, spreading and flake broadcasting may need to occur within a short window. The contractor must be able to work within the product&#x27;s requirements.</p></section><div class="pull rv"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#121109" stroke-width="2" aria-hidden="true"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-4.5"/></svg></span><p>Polyurea is often the <b>basecoat in flake systems</b>, sealed with a compatible UV-stable topcoat where sun reaches the floor.</p></div><section class="sec rv" id="s-3"><span class="sn">03</span><h2>System design and UV exposure</h2><p>Polyurea can be used with decorative flakes and compatible clear topcoats. Some aromatic formulations can discolor in sunlight, so a UV-stable topcoat may be recommended where sun reaches the floor. Polyaspartic topcoats are commonly considered for that role, but compatibility must be confirmed. Outdoor concrete requires separate assessment for UV, moisture, weather and traction.</p></section><section class="sec rv" id="s-4"><span class="sn">04</span><h2>Preparation and moisture</h2><p>The slab should be sound, clean and mechanically prepared to the profile required by the system. Inspect old coatings, oil, weak concrete, cracks, spalling and moisture. Contamination can remain below the surface even when concrete looks clean. Moisture vapor can contribute to blistering or bond failure; testing may be appropriate. Cracks and joints should be assessed individually, since moving joints require proper detailing.</p></section><section class="sec rv" id="s-5"><span class="sn">05</span><h2>Installation and cure</h2><p>A typical project includes inspection, preparation, repairs, dust removal, polyurea application and, where specified, decorative broadcast and a compatible topcoat. Because some products cure quickly, edge details and transitions need planning. Temperature and humidity can affect reaction and cure. Ask for separate instructions for foot traffic, vehicles and equipment rather than relying on a general claim that the system is fast.</p></section><section class="sec rv" id="s-6"><span class="sn">06</span><h2>Maintenance and choosing a contractor</h2><p>Sweep grit, use approved mild cleaners and wipe spills promptly. Inspect for chips, peeling and wear in traffic paths. Common failure causes include poor preparation, contamination, moisture, incorrect mixing and application outside environmental limits. Ask for product names, technical data, layer sequence, UV considerations, repair scope and maintenance guidance. Avoid claims that polyurea is automatically superior to every alternative.</p></section><section class="sec rv" id="s-7"><span class="sn">07</span><h2>Queen Creek conditions</h2><p>Hot, sunny conditions make slab temperature and UV exposure important. Concrete in direct sun can be hotter than ambient air, affecting working time. Monsoon weather can bring moisture and sudden changes, so the installer should follow product limits. The right system depends on the slab and actual use, not simply on the fastest advertised cure.</p></section></div>
+      <div class="secs"><section class="sec rv" id="s-1"><span class="sn">01</span><h2>Understanding polyurea</h2><p>Polyurea is a family of coatings formed through a reaction between isocyanate and amine components. Formulations vary in reactivity, flexibility, application method and intended use. Some cure quickly and accommodate temperature changes better than more rigid materials, but performance depends on the exact system. Polyurea is commonly used as a basecoat in decorative flake floors, with a compatible topcoat sealing the finish.</p></section><section class="sec rv" id="s-2"><span class="sn">02</span><h2>Why owners consider it</h2><p>Fast cure can reduce the time a garage or other area is unavailable. Flexible formulations can accommodate some thermal change, but they do not eliminate structural movement or poor joint design. Rapid reaction also demands precise application: mixing, spreading and flake broadcasting may need to occur within a short window. The contractor must be able to work within the product&#x27;s requirements.</p></section><div class="pull rv"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#121109" stroke-width="2" aria-hidden="true"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-4.5"/></svg></span><p>Polyurea is often the <b>basecoat in flake systems</b>, sealed with a compatible UV-stable topcoat where sun reaches the floor.</p></div><section class="sec rv" id="s-3"><span class="sn">03</span><h2>System design and UV exposure</h2><p>Polyurea can be used with decorative flakes and compatible clear topcoats. Some aromatic formulations can discolor in sunlight, so a UV-stable topcoat may be recommended where sun reaches the floor. Polyaspartic topcoats are commonly considered for that role, but compatibility must be confirmed. Outdoor concrete requires separate assessment for UV, moisture, weather and traction.</p></section><section class="sec rv" id="s-4"><span class="sn">04</span><h2>Preparation and moisture</h2><p>The slab should be sound, clean and mechanically prepared to the profile required by the system. Inspect old coatings, oil, weak concrete, cracks, spalling and moisture. Contamination can remain below the surface even when concrete looks clean. Moisture vapor can contribute to blistering or bond failure; testing may be appropriate. Cracks and joints should be assessed individually, since moving joints require proper detailing.</p></section><figure class="photo inline-fig rv"><img src="/assets/img/floor-coating-over-prepared-concrete-slab-1200.webp" srcset="/assets/img/floor-coating-over-prepared-concrete-slab-640.webp 640w, /assets/img/floor-coating-over-prepared-concrete-slab-1200.webp 1200w, /assets/img/floor-coating-over-prepared-concrete-slab-1800.webp 1800w" sizes="(max-width:980px) 100vw, 800px" width="1200" height="800" alt="Gray floor coating being spread over a mechanically prepared concrete slab next to a pit" loading="lazy" decoding="async"><figcaption>Preparation decides how well the coating bonds.</figcaption></figure><section class="sec rv" id="s-5"><span class="sn">05</span><h2>Installation and cure</h2><p>A typical project includes inspection, preparation, repairs, dust removal, polyurea application and, where specified, decorative broadcast and a compatible topcoat. Because some products cure quickly, edge details and transitions need planning. Temperature and humidity can affect reaction and cure. Ask for separate instructions for foot traffic, vehicles and equipment rather than relying on a general claim that the system is fast.</p></section><section class="sec rv" id="s-6"><span class="sn">06</span><h2>Maintenance and choosing a contractor</h2><p>Sweep grit, use approved mild cleaners and wipe spills promptly. Inspect for chips, peeling and wear in traffic paths. Common failure causes include poor preparation, contamination, moisture, incorrect mixing and application outside environmental limits. Ask for product names, technical data, layer sequence, UV considerations, repair scope and maintenance guidance. Avoid claims that polyurea is automatically superior to every alternative.</p></section><section class="sec rv" id="s-7"><span class="sn">07</span><h2>Queen Creek conditions</h2><p>Hot, sunny conditions make slab temperature and UV exposure important. Concrete in direct sun can be hotter than ambient air, affecting working time. Monsoon weather can bring moisture and sudden changes, so the installer should follow product limits. The right system depends on the slab and actual use, not simply on the fastest advertised cure.</p></section></div>
     </div>
   </section>
 
@@ -599,7 +634,7 @@ footer a:hover{color:var(--gold)}
     dd.addEventListener('focusout', function(e){ if(!dd.contains(e.relatedTarget)) set(false); });
   });
 
-  /* Texture */
+  if(document.getElementById('tex')){ /* Texture */
   var tx = document.getElementById('tex'), kind = tx.dataset.kind, cv = tx.querySelector('canvas'), c = cv.getContext('2d');
   var PAL = {
     'flake-gray':{base:'#5a5853',f:['#1a1a18','#8f8d86','#e9e6dd','#FFD21F','#c9c5ba','#6f6c66']},
@@ -656,6 +691,7 @@ footer a:hover{color:var(--gold)}
     }
   } else { paint(); var rt; addEventListener('resize', function(){ clearTimeout(rt); rt = setTimeout(paint, 200); }); }
 
+  }
   /* Magnetic buttons */
   if(fine && !reduce) document.querySelectorAll('.mag').forEach(function(b){
     b.addEventListener('mousemove', function(e){ var r = b.getBoundingClientRect(); b.style.transform = 'translate(' + ((e.clientX - r.left - r.width/2)*.18) + 'px,' + ((e.clientY - r.top - r.height/2)*.3) + 'px)'; });
@@ -679,6 +715,15 @@ footer a:hover{color:var(--gold)}
     var tio = new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ tocLinks.forEach(function(a){ a.classList.toggle('on', a.getAttribute('href') === '#' + e.target.id); }); } }); }, {rootMargin:'-30% 0px -60% 0px'});
     document.querySelectorAll('.sec').forEach(function(s){ tio.observe(s); });
   }
+
+  /* Photo parallax */
+  var pars = document.querySelectorAll('.par');
+  if(pars.length && !(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches)){
+    var ticking = false;
+    function px(){ ticking = false; var vh = innerHeight; pars.forEach(function(el){ var r = el.getBoundingClientRect(); if(r.bottom < 0 || r.top > vh) return; var p = (r.top + r.height/2 - vh/2) / vh; el.style.setProperty('--py', (p * -40).toFixed(1) + 'px'); }); }
+    addEventListener('scroll', function(){ if(!ticking){ ticking = true; requestAnimationFrame(px); } }, {passive:true}); px();
+  }
+
   /* FAQ */
   document.querySelectorAll('.qa').forEach(function(q){ q.querySelector('button').addEventListener('click', function(){
     var open = !q.classList.contains('open');

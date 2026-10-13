@@ -6,6 +6,14 @@
 <title>Epoxy Flooring Queen Creek AZ</title>
 <meta name="description" content="Epoxy Flooring Queen Creek AZ installs garage floor coatings, decorative flake, metallic epoxy, polyaspartic, polyurea, patio and commercial epoxy floors in Queen Creek and the East Valley.">
 <link rel="canonical" href="https://epoxyflooringqueencreekaz.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Epoxy Flooring Queen Creek AZ">
+<meta property="og:title" content="Epoxy Flooring Queen Creek AZ">
+<meta property="og:description" content="Epoxy Flooring Queen Creek AZ installs garage floor coatings, decorative flake, metallic epoxy, polyaspartic, polyurea, patio and commercial epoxy floors in Queen Creek and the East Valley.">
+<meta property="og:url" content="https://epoxyflooringqueencreekaz.com/">
+<meta property="og:image" content="https://epoxyflooringqueencreekaz.com/assets/img/epoxy-resin-pour-concrete-floor-1200.webp">
+<meta property="og:image:alt" content="Worker pouring yellow epoxy resin from a bucket onto a concrete floor">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#FFD21F">
 <link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
@@ -405,6 +413,37 @@ footer a:hover{color:var(--gold)}
 .brand .logo{display:block;height:54px;width:auto;max-width:100%}
 .foot .brand .logo{height:clamp(96px,11vw,140px)}
 @media (max-width:420px){.brand .logo{height:44px}}
+
+/* Photos */
+.photo{position:relative;margin:0;border-radius:var(--r);overflow:hidden;background:var(--soft);isolation:isolate}
+.photo img{display:block;width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+.photo figcaption{position:absolute;left:14px;right:14px;bottom:14px;z-index:2;font-size:.84rem;line-height:1.4;color:#fff;background:rgba(18,17,9,.55);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);padding:10px 14px;border-radius:14px;max-width:max-content}
+.par{overflow:hidden}
+.par img{transform:translate3d(0,var(--py,0px),0) scale(1.14);will-change:transform;transition:none}
+.ph-img{aspect-ratio:16/11;max-width:100%}
+.card.big .photo-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+.card.big:hover .photo-bg{transform:scale(1.06)}
+.banner{aspect-ratio:21/8;min-height:240px;border-radius:clamp(26px,4vw,40px);box-shadow:0 40px 80px -50px rgba(18,17,9,.5)}
+.banner .chip{position:absolute;left:20px;bottom:20px;z-index:2;animation:float 6s ease-in-out infinite}
+.inline-fig{aspect-ratio:16/9}
+.inline-fig:hover img{transform:scale(1.04)}
+/* Gallery */
+.gal{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));grid-auto-rows:clamp(180px,22vw,300px);gap:14px}
+.gal a{position:relative;display:block;border-radius:var(--r);overflow:hidden;text-decoration:none;color:#fff;isolation:isolate}
+.gal a img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease),filter .6s}
+.gal a::after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 45%,rgba(18,17,9,.75));opacity:.85;transition:opacity .5s;z-index:0}
+.gal a:hover img{transform:scale(1.07)}
+.gal a:hover::after{opacity:1}
+.gal .cap{position:absolute;left:18px;right:18px;bottom:16px;z-index:2;display:grid;gap:2px;transform:translateY(8px);transition:transform .6s var(--ease)}
+.gal a:hover .cap{transform:none}
+.gal .cap b{font:700 1.05rem var(--display);letter-spacing:-.01em}
+.gal .cap small{font-size:.82rem;color:#e7e2d2;max-height:0;overflow:hidden;opacity:0;transition:max-height .6s var(--ease),opacity .4s}
+.gal a:hover .cap small,.gal a:focus-visible .cap small{max-height:60px;opacity:1}
+.gal .go{position:absolute;right:16px;top:16px;z-index:2;width:38px;height:38px;border-radius:50%;background:rgba(255,255,255,.85);color:var(--ink);display:grid;place-items:center;transform:scale(.6);opacity:0;transition:transform .5s var(--ease),opacity .3s}
+.gal a:hover .go{transform:none;opacity:1}
+.g7{grid-column:span 7}.g5{grid-column:span 5}.g4{grid-column:span 4}.g6{grid-column:span 6}
+@media (max-width:980px){.g7,.g5,.g4,.g6{grid-column:span 6}.banner{aspect-ratio:16/9}}
+@media (max-width:640px){.gal{grid-template-columns:1fr;grid-auto-rows:240px}.g7,.g5,.g4,.g6{grid-column:auto}.banner .chip{display:none}.gal .cap small{max-height:60px;opacity:1}}
 </style>
 </head>
 <body>
@@ -511,7 +550,7 @@ footer a:hover{color:var(--gold)}
       </div>
       <div class="bento">
         <a class="card big tilt rv" href="garage-floor-coatings-queen-creek-az/">
-          <canvas class="flakes" id="flakeCard" aria-hidden="true"></canvas>
+          <img class="photo-bg" src="assets/img/garage-floor-flake-coating-installation-1200.webp" srcset="assets/img/garage-floor-flake-coating-installation-640.webp 640w, assets/img/garage-floor-flake-coating-installation-1200.webp 1200w, assets/img/garage-floor-flake-coating-installation-1800.webp 1800w" sizes="(max-width:980px) 100vw, 720px" width="1200" height="900" alt="Installer rolling a gray base coat with decorative flakes onto a residential garage floor" loading="lazy" decoding="async">
           <div class="top"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#121109" stroke-width="2"><path d="M3 11 12 4l9 7v9H3z"/><path d="M7 20v-7h10v7M7 16h10"/></svg></span><span class="arrow">→</span></div>
           <div class="body">
             <span class="k">Most popular · flake + polyaspartic</span>
@@ -639,7 +678,7 @@ footer a:hover{color:var(--gold)}
             <li><span><strong>UV-stable topcoats</strong> that hold up with the door open all afternoon</span></li>
           </ul>
         </div>
-        <div class="ph wide"><span>Photo: garage before / after</span></div>
+        <figure class="photo ph-img par"><img src="assets/img/garage-floor-flake-coating-installation-1200.webp" srcset="assets/img/garage-floor-flake-coating-installation-640.webp 640w, assets/img/garage-floor-flake-coating-installation-1200.webp 1200w, assets/img/garage-floor-flake-coating-installation-1800.webp 1800w" sizes="(max-width:980px) 100vw, 600px" width="1200" height="900" alt="Installer rolling a gray base coat with decorative flakes onto a residential garage floor" loading="lazy" decoding="async"></figure>
       </div>
       <div class="panel" role="tabpanel" id="p2" aria-labelledby="t2" hidden>
         <div class="prose">
@@ -652,7 +691,7 @@ footer a:hover{color:var(--gold)}
             <li><span><strong>Casitas &amp; basements:</strong> where the slab and moisture check out</span></li>
           </ul>
         </div>
-        <div class="ph wide"><span>Photo: coated patio</span></div>
+        <figure class="photo ph-img par"><img src="assets/img/outdoor-concrete-patio-coating-exposed-aggregate-1200.webp" srcset="assets/img/outdoor-concrete-patio-coating-exposed-aggregate-640.webp 640w, assets/img/outdoor-concrete-patio-coating-exposed-aggregate-1200.webp 1200w, assets/img/outdoor-concrete-patio-coating-exposed-aggregate-1800.webp 1800w" sizes="(max-width:980px) 100vw, 600px" width="1200" height="800" alt="Outdoor patio with a coated exposed-aggregate concrete surface and a bistro table set in full sun" loading="lazy" decoding="async"></figure>
       </div>
       <div class="panel" role="tabpanel" id="p3" aria-labelledby="t3" hidden>
         <div class="prose">
@@ -664,7 +703,7 @@ footer a:hover{color:var(--gold)}
             <li><span><strong>Offices &amp; storage</strong> with concrete floors</span></li>
           </ul>
         </div>
-        <div class="ph wide"><span>Photo: commercial showroom floor</span></div>
+        <figure class="photo ph-img par"><img src="assets/img/commercial-office-epoxy-floor-color-zones-1200.webp" srcset="assets/img/commercial-office-epoxy-floor-color-zones-640.webp 640w, assets/img/commercial-office-epoxy-floor-color-zones-1200.webp 1200w, assets/img/commercial-office-epoxy-floor-color-zones-1800.webp 1800w" sizes="(max-width:980px) 100vw, 600px" width="1200" height="800" alt="Modern office with gray epoxy flooring divided into zones with red and yellow floor lines" loading="lazy" decoding="async"></figure>
       </div>
       <div class="panel" role="tabpanel" id="p4" aria-labelledby="t4" hidden>
         <div class="prose">
@@ -676,7 +715,7 @@ footer a:hover{color:var(--gold)}
             <li><span><strong>Textured finishes</strong> for traction where floors get wet</span></li>
           </ul>
         </div>
-        <div class="ph wide"><span>Photo: warehouse floor</span></div>
+        <figure class="photo ph-img par"><img src="assets/img/warehouse-epoxy-floor-loading-dock-doors-1200.webp" srcset="assets/img/warehouse-epoxy-floor-loading-dock-doors-640.webp 640w, assets/img/warehouse-epoxy-floor-loading-dock-doors-1200.webp 1200w, assets/img/warehouse-epoxy-floor-loading-dock-doors-1800.webp 1800w" sizes="(max-width:980px) 100vw, 600px" width="1200" height="800" alt="Large warehouse with a seamless high-gloss epoxy floor reflecting loading dock doors" loading="lazy" decoding="async"></figure>
       </div>
     </div>
   </section>
@@ -699,6 +738,17 @@ footer a:hover{color:var(--gold)}
         <div class="step rv"><span class="num">07</span><h3>Proper cure time</h3><p>We tell you when you can walk on it, move things back and park on it again.</p></div>
         <div class="step tip rv"><span class="num" style="-webkit-text-stroke-color:var(--ink)">!</span><h3>Ask about prep</h3><p>When comparing quotes, don't just compare coatings. A premium coating can't make up for a poorly prepared slab.</p></div>
       </div>
+    </div>
+  </section>
+
+  <section class="block" id="gallery" style="padding-bottom:0">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <span class="tag"><i></i>See what's possible</span>
+        <h2>Epoxy floors in action</h2>
+        <p class="lead">Finishes and settings like the ones we coat across Queen Creek. Tap a photo to read about that system.</p>
+      </div>
+      <div class="gal"><a class="g7 rv" href="commercial-epoxy-flooring-queen-creek-az/"><img src="assets/img/high-gloss-epoxy-floor-auto-service-shop-1200.webp" srcset="assets/img/high-gloss-epoxy-floor-auto-service-shop-640.webp 640w, assets/img/high-gloss-epoxy-floor-auto-service-shop-1200.webp 1200w, assets/img/high-gloss-epoxy-floor-auto-service-shop-1800.webp 1800w" sizes="(max-width:640px) 100vw, (max-width:980px) 50vw, 700px" width="1200" height="800" alt="High-gloss light gray epoxy floor in an auto service shop with vehicle lifts reflected in the finish" loading="lazy" decoding="async"><span class="go">→</span><span class="cap"><b>Commercial Epoxy</b><small>Service bays need a floor that handles fluids, tools and lifts.</small></span></a><a class="g5 rv" href="metallic-epoxy-flooring-queen-creek-az/"><img src="assets/img/metallic-epoxy-floor-blue-silver-swirl-1200.webp" srcset="assets/img/metallic-epoxy-floor-blue-silver-swirl-640.webp 640w, assets/img/metallic-epoxy-floor-blue-silver-swirl-1200.webp 1200w, assets/img/metallic-epoxy-floor-blue-silver-swirl-1800.webp 1800w" sizes="(max-width:640px) 100vw, (max-width:980px) 50vw, 700px" width="1200" height="798" alt="Close-up of a metallic epoxy floor with swirling blue, silver and charcoal pigments" loading="lazy" decoding="async"><span class="go">→</span><span class="cap"><b>Metallic Epoxy</b><small>Metallic pigments create movement and depth.</small></span></a><a class="g4 rv" href="garage-floor-coatings-queen-creek-az/"><img src="assets/img/epoxy-resin-pour-concrete-floor-1200.webp" srcset="assets/img/epoxy-resin-pour-concrete-floor-640.webp 640w, assets/img/epoxy-resin-pour-concrete-floor-1200.webp 1200w, assets/img/epoxy-resin-pour-concrete-floor-1800.webp 1800w" sizes="(max-width:640px) 100vw, (max-width:980px) 50vw, 700px" width="1200" height="816" alt="Worker pouring yellow epoxy resin from a bucket onto a concrete floor" loading="lazy" decoding="async"><span class="go">→</span><span class="cap"><b>Garage Floor Coatings</b><small>Two-part resin is mixed and poured within its pot life.</small></span></a><a class="g4 rv" href="decorative-flake-flooring-queen-creek-az/"><img src="assets/img/decorative-flake-chip-floor-blend-samples-1200.webp" srcset="assets/img/decorative-flake-chip-floor-blend-samples-640.webp 640w, assets/img/decorative-flake-chip-floor-blend-samples-1200.webp 1200w" sizes="(max-width:640px) 100vw, (max-width:980px) 50vw, 700px" width="1200" height="1804" alt="Two decorative flake floor samples, one black with white, gray and tan chips and one light gray with mixed chips" loading="lazy" decoding="async"><span class="go">→</span><span class="cap"><b>Decorative Flake</b><small>Flake size, color and density change the whole look.</small></span></a><a class="g4 rv" href="warehouse-floor-coatings-queen-creek-az/"><img src="assets/img/aircraft-hangar-blue-epoxy-floor-1200.webp" srcset="assets/img/aircraft-hangar-blue-epoxy-floor-640.webp 640w, assets/img/aircraft-hangar-blue-epoxy-floor-1200.webp 1200w, assets/img/aircraft-hangar-blue-epoxy-floor-1800.webp 1800w" sizes="(max-width:640px) 100vw, (max-width:980px) 50vw, 700px" width="1200" height="800" alt="Aircraft hangar with a bright blue high-gloss epoxy floor and two small planes" loading="lazy" decoding="async"><span class="go">→</span><span class="cap"><b>Warehouse Floor</b><small>Large commercial floors can be bold and easy to keep clean.</small></span></a><a class="g6 rv" href="commercial-epoxy-flooring-queen-creek-az/"><img src="assets/img/commercial-parking-garage-epoxy-floor-safety-lines-1200.webp" srcset="assets/img/commercial-parking-garage-epoxy-floor-safety-lines-640.webp 640w, assets/img/commercial-parking-garage-epoxy-floor-safety-lines-1200.webp 1200w, assets/img/commercial-parking-garage-epoxy-floor-safety-lines-1800.webp 1800w" sizes="(max-width:640px) 100vw, (max-width:980px) 50vw, 700px" width="1200" height="834" alt="Commercial parking garage with glossy epoxy floor, yellow safety lines and painted walkway zones" loading="lazy" decoding="async"><span class="go">→</span><span class="cap"><b>Commercial Epoxy</b><small>Color-coded lanes support wayfinding in busy spaces.</small></span></a><a class="g6 rv" href="residential-epoxy-flooring-queen-creek-az/"><img src="assets/img/gray-epoxy-floor-loft-interior-1200.webp" srcset="assets/img/gray-epoxy-floor-loft-interior-640.webp 640w, assets/img/gray-epoxy-floor-loft-interior-1200.webp 1200w, assets/img/gray-epoxy-floor-loft-interior-1800.webp 1800w" sizes="(max-width:640px) 100vw, (max-width:980px) 50vw, 700px" width="1200" height="800" alt="Bright loft interior with a glossy gray mottled epoxy floor under skylights" loading="lazy" decoding="async"><span class="go">→</span><span class="cap"><b>Residential Epoxy</b><small>Interior concrete can become a finished, seamless floor.</small></span></a></div>
     </div>
   </section>
 
@@ -869,7 +919,7 @@ footer a:hover{color:var(--gold)}
 
   /* Flake card canvas */
   var fc = document.getElementById('flakeCard');
-  function paintFlakes(){
+  function paintFlakes(){ if(!fc || !fc.getContext) return;
     var r = fc.getBoundingClientRect(), d = Math.min(devicePixelRatio || 1, 2);
     if(!r.width) return;
     fc.width = r.width * d; fc.height = r.height * d;
@@ -944,6 +994,15 @@ footer a:hover{color:var(--gold)}
   var steps = document.getElementById('steps'), bar = document.getElementById('bar');
   function pbar(){ var r = steps.getBoundingClientRect(), p = (innerHeight * .85 - r.top) / (r.height + innerHeight * .3); bar.style.setProperty('--p', Math.max(0, Math.min(1, p))); }
   addEventListener('scroll', pbar, {passive:true}); pbar();
+
+
+  /* Photo parallax */
+  var pars = document.querySelectorAll('.par');
+  if(pars.length && !(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches)){
+    var ticking = false;
+    function px(){ ticking = false; var vh = innerHeight; pars.forEach(function(el){ var r = el.getBoundingClientRect(); if(r.bottom < 0 || r.top > vh) return; var p = (r.top + r.height/2 - vh/2) / vh; el.style.setProperty('--py', (p * -40).toFixed(1) + 'px'); }); }
+    addEventListener('scroll', function(){ if(!ticking){ ticking = true; requestAnimationFrame(px); } }, {passive:true}); px();
+  }
 
   /* FAQ */
   document.querySelectorAll('.qa').forEach(function(q){ q.querySelector('button').addEventListener('click', function(){
