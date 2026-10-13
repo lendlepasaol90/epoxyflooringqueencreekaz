@@ -150,7 +150,9 @@ section.block{padding-block:clamp(72px,10vw,130px)}
 .ph span{position:relative;font:500 .75rem var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);background:rgba(255,255,255,.8);padding:9px 14px;border-radius:99px;border:1px solid var(--line);text-align:center;max-width:80%}
 .ph.wide{aspect-ratio:16/11}
 .about-media{position:relative}
-.about-media .float{position:absolute;right:-18px;bottom:28px;background:var(--ink);color:#fff;border-radius:22px;padding:18px 20px;max-width:230px;box-shadow:0 30px 60px -30px rgba(18,17,9,.6);font-size:.9rem;line-height:1.45}
+.hero-form{position:relative;border:1px solid var(--line);box-shadow:0 40px 90px -40px rgba(150,110,0,.45),0 0 0 8px rgba(255,210,31,.12);animation:rise 1.1s .25s var(--ease) both}
+.about-media .chip.c3{bottom:96px}
+.about-media .float{position:absolute;z-index:3;right:-18px;bottom:28px;background:var(--ink);color:#fff;border-radius:22px;padding:18px 20px;max-width:230px;box-shadow:0 30px 60px -30px rgba(18,17,9,.6);font-size:.9rem;line-height:1.45}
 .about-media .float b{display:block;font:800 1.6rem var(--display);color:var(--yellow);letter-spacing:-.02em;margin-bottom:4px}
 .prose{display:grid;gap:16px;color:var(--muted);max-width:60ch}
 .prose strong{color:var(--ink)}
@@ -408,13 +410,21 @@ footer a:hover{color:var(--gold)}
           <div class="stat"><b data-count="8">8</b><span>cities served</span></div>
         </div>
       </div>
-      <div class="pour" id="pour">
-        <canvas id="swirl" aria-label="Animated metallic epoxy pour in gold and white"></canvas>
-        <span class="live"><i></i>Metallic pour</span>
-        <div class="chip c1"><span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.5 1.5M17.5 17.5 19 19M5 19l1.5-1.5M17.5 6.5 19 5"/></svg></span><span><b>UV-stable topcoat</b><small>Won't yellow in the sun</small></span></div>
-        <div class="chip c2"><span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg></span><span><b>Fast-cure options</b><small>Polyaspartic systems</small></span></div>
-        <div class="chip c3"><span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M4 20h16M6 16l3-9 3 5 3-3 3 7"/></svg></span><span><b>Diamond-ground prep</b><small>For a bond that lasts</small></span></div>
-      </div>
+      <form class="form hero-form" id="heroForm" novalidate>
+        <span class="tag" style="background:var(--yellow-2);border-color:transparent;color:var(--ink)"><i style="background:var(--ink);box-shadow:0 0 0 4px rgba(18,17,9,.12)"></i>Free estimate</span>
+        <h3 style="margin-top:14px">Request a callback</h3>
+        <p class="sub">Tell us about your floor. We'll call to talk options and set up an on-site look.</p>
+        <div class="fields">
+          <div class="field full"><label for="h-name">Name</label><input id="h-name" name="name" autocomplete="name" placeholder="Jordan Rivera" required></div>
+          <div class="field"><label for="h-phone">Phone</label><input id="h-phone" name="phone" type="tel" autocomplete="tel" placeholder="(480) 000-0000" required></div>
+          <div class="field"><label for="h-email">Email</label><input id="h-email" name="email" type="email" autocomplete="email" placeholder="you@email.com"></div>
+          <div class="field full"><label for="h-svc">Project</label>
+            <select id="h-svc" name="service"><option>Garage floor coating</option><option>Residential epoxy</option><option>Patio / concrete coating</option><option>Decorative flake</option><option>Metallic epoxy</option><option>Commercial epoxy flooring</option><option>Warehouse floor</option><option>Not sure yet</option></select>
+          </div>
+          <button class="btn y mag" type="submit">Request my callback <span class="dot">→</span></button>
+          <p class="note" hidden></p>
+        </div>
+      </form>
     </div>
   </section>
 
@@ -425,7 +435,13 @@ footer a:hover{color:var(--gold)}
   <section class="block" id="about">
     <div class="wrap about">
       <div class="about-media rv">
-        <div class="ph"><span>Photo: finished garage flake floor</span></div>
+        <div class="pour" id="pour">
+          <canvas id="swirl" aria-label="Animated metallic epoxy pour in gold and white"></canvas>
+          <span class="live"><i></i>Metallic pour</span>
+          <div class="chip c1"><span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.5 1.5M17.5 17.5 19 19M5 19l1.5-1.5M17.5 6.5 19 5"/></svg></span><span><b>UV-stable topcoat</b><small>Won't yellow in the sun</small></span></div>
+          <div class="chip c2"><span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg></span><span><b>Fast-cure options</b><small>Polyaspartic systems</small></span></div>
+          <div class="chip c3"><span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M4 20h16M6 16l3-9 3 5 3-3 3 7"/></svg></span><span><b>Diamond-ground prep</b><small>For a bond that lasts</small></span></div>
+        </div>
         <div class="float"><b>Prep first.</b>We look at your slab before we recommend what goes on top of it.</div>
       </div>
       <div class="rv">
@@ -891,14 +907,16 @@ footer a:hover{color:var(--gold)}
     if(open){ q.classList.add('open'); this.setAttribute('aria-expanded','true'); }
   }); });
 
-  /* Form (preview, not connected yet) */
-  var form = document.getElementById('estForm'), note = document.getElementById('fNote');
-  form.addEventListener('submit', function(e){
-    e.preventDefault();
-    var bad = Array.prototype.find.call(form.querySelectorAll('[required]'), function(x){ return !x.value.trim(); });
-    note.hidden = false;
-    if(bad){ note.textContent = 'Please add your ' + bad.name + ' so we can reach you.'; bad.focus(); return; }
-    note.textContent = 'Thanks, ' + form.querySelector('[name=name]').value.trim() + '. This form isn’t connected yet, so please call or email us for now.';
+  /* Forms (preview, not connected yet) */
+  document.querySelectorAll('#heroForm,#estForm').forEach(function(form){
+    var note = form.querySelector('.note');
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      var bad = Array.prototype.find.call(form.querySelectorAll('[required]'), function(x){ return !x.value.trim(); });
+      note.hidden = false;
+      if(bad){ note.textContent = 'Please add your ' + bad.name + ' so we can reach you.'; bad.focus(); return; }
+      note.textContent = 'Thanks, ' + form.querySelector('[name=name]').value.trim() + '. This form isn’t connected yet, so please call or email us for now.';
+    });
   });
 
   /* Copy */
